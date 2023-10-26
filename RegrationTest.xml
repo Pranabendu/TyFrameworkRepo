@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<groups>
+		<run>
+			<include name="regration"></include>
+		</run>
+	</groups>
+	<listeners>
+		<listener class-name="hms.genericutility.ListenerImplementation"></listener>
+		<listener class-name="hms.genericutility.AnnotationTransformer"></listener>
+	</listeners>
+  <test thread-count="2" name="Test">
+    <classes>
+      <class name="Com.Hms.TestYantratest.Integration_between_Doctor_and_PateintTest"/>
+      <class name="Com.Hms.TestYantratest.Manage_Patient_HistorTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
